@@ -1,0 +1,2 @@
+#!/bin/sh
+jekyll clean && jekyll build && git add _site && git commit -m "New build of site" ; git subtree push --prefix=_site ssh://git@github.com/quantforce/quantforce.github.io master 
